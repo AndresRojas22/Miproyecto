@@ -15,7 +15,7 @@ namespace AccesoDatosTienda
         {
             _conn = new MySqlConnection(string.Format("server = {0}; user = {1}; password = {2}; database = {3}",s,u,p,b));
         }
-        public string Comando()
+        public string Comando(string q)
         {
             try
             {
