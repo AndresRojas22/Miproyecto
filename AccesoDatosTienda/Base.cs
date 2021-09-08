@@ -11,9 +11,9 @@ namespace AccesoDatosTienda
     public class Base
     {
         MySqlConnection _conn;
-        public Base(string s, string u, string p, string b)
+        public Base(string s, string u, string p, string b, uint port)
         {
-            _conn = new MySqlConnection(string.Format("server = {0}; user = {1}; password = {2}; database = {3}",s,u,p,b));
+            _conn = new MySqlConnection(string.Format("server = {0}; user = {1}; password = {2}; database = {3}; port = {4}; SslMode=none",s,u,p,b,port));
         }
         public string Comando(string q)
         {

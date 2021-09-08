@@ -20,5 +20,9 @@ namespace EntidadesTienda
             _Precio = Precio;
 
         }
+        public Entidad()
+        {
+
+        }
     }
 }
